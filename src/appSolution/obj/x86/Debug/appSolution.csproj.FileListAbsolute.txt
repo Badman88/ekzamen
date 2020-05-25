@@ -2,3 +2,8 @@ D:\appSolution\appSolution\bin\Debug\appSolution.exe
 D:\appSolution\appSolution\bin\Debug\appSolution.pdb
 D:\appSolution\appSolution\obj\x86\Debug\appSolution.exe
 D:\appSolution\appSolution\obj\x86\Debug\appSolution.pdb
+C:\Users\KIRILL\Documents\GitHub\ekzamen\src\appSolution\bin\Debug\appSolution.exe
+C:\Users\KIRILL\Documents\GitHub\ekzamen\src\appSolution\bin\Debug\appSolution.pdb
+C:\Users\KIRILL\Documents\GitHub\ekzamen\src\appSolution\obj\x86\Debug\appSolution.csprojAssemblyReference.cache
+C:\Users\KIRILL\Documents\GitHub\ekzamen\src\appSolution\obj\x86\Debug\appSolution.exe
+C:\Users\KIRILL\Documents\GitHub\ekzamen\src\appSolution\obj\x86\Debug\appSolution.pdb
