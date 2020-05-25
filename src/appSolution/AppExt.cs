@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 
 namespace appSolution
 {
@@ -38,6 +39,27 @@ namespace appSolution
             for (int i = 0; i < size; i++)
                 Console.Write("Наименование: " + Applications[i].name + "; Производитель: " + Applications[i].developer + "; размер в мБайт: " + Applications[i].mBytesSize+"\n");
             Console.Write("\n");
+        }
+
+        public bool exportCsv(string fileName)
+        {
+            try
+            {
+                FileStream aFile = new FileStream(fileName, FileMode.OpenOrCreate);
+                StreamWriter csvWrite = new StreamWriter(aFile, Encoding.UTF8);
+                //aFile.Seek(0, SeekOrigin.End);
+                csvWrite.WriteLine("Наименование;Производитель;размер в мБайт;");
+                for (int i = 0; i < size; i++)
+                    csvWrite.Write(Applications[i].name + ";" + Applications[i].developer + ";" + Applications[i].mBytesSize + "\n");
+                csvWrite.Close();
+
+                return true;
+            }
+            catch (Exception exp)
+            {
+                Console.Write("Ошибка записи файла. Подробности:" + exp.Message.ToString());
+                return false;
+            }
         }
 
         public void Sort()

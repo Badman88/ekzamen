@@ -13,11 +13,11 @@ namespace appSolution
             int n = Convert.ToInt32(Console.ReadLine());
             AppExt appExt = new AppExt(n);
             appExt.inputData();
-            appExt.print();
+            //appExt.print();
             appExt.Sort();
-            appExt.print();
-
-            Console.ReadKey();
+            //appExt.print();
+            appExt.exportCsv("oot.csv");
+            //Console.ReadKey();
         }
     }
 }
