@@ -1,0 +1,4 @@
+D:\appSolution\appSolution\bin\Debug\appSolution.exe
+D:\appSolution\appSolution\bin\Debug\appSolution.pdb
+D:\appSolution\appSolution\obj\x86\Debug\appSolution.exe
+D:\appSolution\appSolution\obj\x86\Debug\appSolution.pdb

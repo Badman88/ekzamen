@@ -7,16 +7,44 @@ namespace appSolution
 {
     class AppExt
     {
-        App[] Applications;
-        
-        AppExt(int size)
+        List<App> Applications;
+        int size = 0;
+
+        public AppExt(int size)
         {
-            App[] Applications = new App[size];
+            //List App[] Applications = new App[size];
+            Applications = new List<App>();
+            this.size = size;
+            for (int i = 0; i < size; i++)
+                Applications.Add(new App());
         }
 
-        void setData(string name, string developer, int mBytesSize, int num)
+        public void inputData()
         {
-            Applications[num].setData(name, developer, mBytesSize);
+            for (int i = 0; i < size; i++)
+            {
+                Console.Write("Введите наименование: ");
+                string name = Console.ReadLine();
+                Console.Write("Введите производителя: ");
+                string developer = Console.ReadLine();
+                Console.Write("Введите размер в мБайт: ");
+                double sizeApp = Convert.ToDouble(Console.ReadLine());
+                Applications[i].setData(name, developer, sizeApp);
+            }
         }
+
+        public void print()
+        {
+            for (int i = 0; i < size; i++)
+                Console.Write("Наименование: " + Applications[i].name + "; Производитель: " + Applications[i].developer + "; размер в мБайт: " + Applications[i].mBytesSize+"\n");
+            Console.Write("\n");
+        }
+
+        public void Sort()
+        {
+            Applications.Sort();
+        }
+
+
     }
 }
